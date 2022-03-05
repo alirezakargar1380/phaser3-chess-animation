@@ -32,16 +32,16 @@ class SceneChessBoard extends Phaser.Scene {
 
 
 
-    const poop = this.add.image(60 - 32, 300, 'black_soldier_nut').setScale(0.5);
+    const poop = this.add.image(60 - 32, 300, 'black_soldier_nut')//.setScale(0.5);
     console.log(this.tweens)
     this.tweens.add({
       targets: poop,
       props: {
         x: {
-          value: '-=64', ease: 'Power1'
+          value: '1000', ease: 'Power1'
         },
         y: {
-          value: '+=50', ease: 'Bounce.easeOut'
+          value: '1400', ease: 'InOut'
         }
       },
       duration: 450
